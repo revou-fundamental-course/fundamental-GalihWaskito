@@ -4,8 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="css\style.css">
 </head>
+
 <body>
+   <!-- Header Nav -->
+    <header class="nav-container">
+        <div class="logo-icon"></div>
+        
+        <nav>
+            <a href="#home-page">Home Page</a>
+            <a href="#our-profile">Our Profile</a>
+            <a>Trophies</a>
+            <a>Message Us</a>
+        </nav>
+    </header> 
+
+<main>
+    <!-- Home Content -->
+    <section id="home-page">
+        <header>
+            <h1>Hi Reds, welcome to our unofficial website!</h1>
+        </header>
+
+        <article>
+            <p>Click the banner for more photos</p>
+            
+            <div onclick="nextSlide(1)">
+                <div class="banner-container" style="background-size: contain; background-position: inherit; background-image: url(https://static01.nyt.com/images/2019/06/01/sports/01champions19/01champions19-superJumbo.jpg);"></div>
+                <div class="banner-container" style="background-size: contain; background-position: inherit; background-image: url(https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/09/thumb_108269_default_news_size_5.jpeg);"></div>
+                <div class="banner-container" style="background-size: contain; background-position: inherit; background-image: url(https://www.thisisanfield.com/wp-content/uploads/GettyImages-2153708566-copy.jpg);"></div>
+            </article>
+    </section>
+    <!-- Our Profile Content -->
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <article class="profile-content" >
+                <div class="profile-item">
+                    <div class="profile-icon profile-1"></div>
+                    <h2>Logo</h2>
+                    <p>Liverbird</p>
+                </div> 
+                
+                <div class="profile-item">
+                    <div class="profile-icon profile-2"></div>
+                    <h2>Stadium</h2>
+                    <p>Anfield</p>
+                </div> 
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-3"></div>
+                    <h2>Head Coach</h2>
+                    <p>Arne Slot</p>
+                </div> 
+               
+            </article> 
+        </section> 
+    <hr>
     
+    <!-- Our Major Trophies Content -->
+    <section>
+        <header>
+            <h1>Our Major Trophies</h1>
+        </header> 
+
+        <article class="trophy-content" >
+            <div class="profile-item">
+                <div class="profile-icon profile-4"></div>
+                <h2>First Division</h2>
+                <h2>19</h2>
+            </div> 
+            
+            <div class="profile-item">
+                <div class="profile-icon profile-5"></div>
+                <h2>Champions League</h2>
+                <h2>6</h2>
+            </div> 
+
+            <div class="profile-item">
+                <div class="profile-icon profile-6"></div>
+                <h2>Europa League</h2>
+                <h2>3</h2>
+            </div>
+
+            <div class="profile-item">
+                <div class="profile-icon profile-7"></div>
+                <h2>FA Cup</h2>
+                <h2>8</h2>
+            </div>
+
+            <div class="profile-item">
+                <div class="profile-icon profile-8"></div>
+                <h2>League Cup</h2>
+                <h2>10</h2>
+            </div>
+
+    
+        </section>
+    <hr>
+    
+    
+    <!-- Message Us Content -->
+    <section>
+        <header>
+            <h1>Message Us</h1>
+        </header>  
+        <article style="display: flex; justify-content: space-evenly;" >
+            <form name="myform">
+                <table>
+                    <tr>
+                        <td><label for="fullname"><b>Name</b></label></td>
+                        <td><p>:</p></td>
+                        <td><input type="text" id="fullname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birth of date"><b>Birth of Date</b></label></td>
+                        <td><p>:</p></td>
+                        <td><input type="date" id="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"><b>Gender</b></label></td>
+                        <td><p>:</p></td>
+                        <td><input type="radio" name="gender" id="male"><label for="male">Male</label>
+                            <input type="radio" name="gender" id="female"><label for="female">Female</label>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message" id="message"><b>Message</b></label></td>
+                        <td><p>:</p></td>
+                        <td><textarea rows="5" cols="36"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                           <button type="button" onclick="validateForm();">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+            
+            <div id="result" style="border: 1px solid; height: 250px; width: 500px;"></div>
+        </article>
+    </section>
+</main>
+<script src="js\script.js"></script>
+    
+
 </body>
+
 </html>

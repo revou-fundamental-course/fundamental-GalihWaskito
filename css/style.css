@@ -1,0 +1,179 @@
+body {
+    padding: 30px;
+}
+
+main {
+    padding: 30px;
+}
+
+.nav-container {
+    height: 120px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 100px;
+    width: 100px;
+
+    /* Image Icon */
+    background-image: url("https://i.pinimg.com/474x/50/9b/f2/509bf2a769358cfb74a6f2cc0aed6c12.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+nav>a {
+    color: black;
+    font-size: larger;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    scroll-padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.banner-container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.profile-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-item {
+    text-align: center;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+}
+
+.profile-1 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(../assets/Profile\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-2 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(../assets/Profile\ 2.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-3 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(../assets/Profile\ 3.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.trophy-content {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+}
+
+.profile-4 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/07/24/14/liverpool-premier-league-trophy.jpg?width=1200../assets/Profile\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-5 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(https://i.redd.it/mqznnraeumn61.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-6 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(https://amballcom.de/wp-content/uploads/2016/05/products-uefa-el-150_online.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-7 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(https://i.pinimg.com/736x/41/53/94/415394afd1ca8aed75b08b48045adb49.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-8 {
+    height: 200px;
+    width: 200px;
+
+    /* Image Icon */
+    background-image: url(https://cdn.charltonafc.com/sites/default/files/2023-06/2nrd2xn.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 520px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+}
